@@ -1,4 +1,4 @@
-/* header{
+header{
     height: 100vh;
     padding-top:5rem;
     overflow: hidden;
@@ -44,7 +44,7 @@
 }
 
 /* media query for med devices */
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     header {
       height: 68vh;
     }
@@ -52,4 +52,4 @@
     .scroll__down {
       display: none;
     }
-  } */ */
+  }

@@ -1,5 +1,5 @@
 import React , { useState } from 'react'
-import "./nav.css";
+import './nav.css';
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
@@ -36,8 +36,7 @@ const Nav = () => {
         setActiveNav("#experience");
       }}
     >
-      {" "}
-      <BiBook />{" "}
+      <BiBook />
     </a>
     <a
       href="#services"
@@ -46,8 +45,7 @@ const Nav = () => {
         setActiveNav("#services");
       }}
     >
-      {" "}
-      <RiServiceLine />{" "}
+      <RiServiceLine />
     </a>
     <a
       href="#contact"
@@ -56,8 +54,8 @@ const Nav = () => {
         setActiveNav("#contact");
       }}
     >
-      {" "}
-      <BiMessageRoundedDots />{" "}
+     
+      <BiMessageRoundedDots />
     </a>
   </nav>
     

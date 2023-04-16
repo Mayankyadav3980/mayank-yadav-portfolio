@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import About from "./components/about/About";
 import Education from "./components/education/Education";
@@ -12,8 +13,9 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
    <>
-    {/* <Nav/> */}
-    <About/>
+    <Header/>
+    <Nav/>
+    {/* <About/> */}
     <Education/>
     <Skills/>
     <Experience/>
