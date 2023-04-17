@@ -20,7 +20,7 @@
 
 .experience__head{
     background: var(--color-primary);
-    padding: 15% 0;
+    padding: 15% 2px;
     line-height: 2rem;
     border-radius:2rem;
     box-shadow: 0 2rem 1rem rgba(0,0,0,0.1);
@@ -50,7 +50,7 @@
 
 .experience__list-icon{
     color: var(--color-primary);
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 2px;
 }
 

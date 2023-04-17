@@ -1,8 +1,8 @@
 .portfolio__container{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
-    width: 75%;
+    margin: auto;
 }
 
 .portfolio__item{
@@ -38,12 +38,14 @@
     .portfolio__container{
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
+        margin: auto;
     }
 }
 /* media queries for medium devices */
 @media screen and (max-width: 600px) {
     .portfolio__container{
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
+        /* margin: auto; */
     }
 }
