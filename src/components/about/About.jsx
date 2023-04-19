@@ -1,22 +1,23 @@
 import React from 'react'
 import './about.css';
 import { BsBook } from 'react-icons/bs'
-import { GrPersonalComputer } from 'react-icons/gr'
 import { HiOutlineDocumentText } from 'react-icons/hi'
 import { MdComputer } from 'react-icons/md'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const About = () => {
+  AOS.init();
   return (
     
-    <section id='about'>
+    <section id='about' data-aos='fade-in' data-aos-duration="1000">
       <div className='container about__container'>
           <div className="abt">
               <h2 className="about__title">About Me </h2>
               <div className="about__content">
                 <h5>I am a Highly motivated, enthusiastic
-                    and Self-driven Engineering student with
-                    interest in Web Development.
+                    and Self-driven student with special interest in Web Development.
                     Continually working upon my knowledge and Skills to stay
                     at cutting edge of technology.
                 </h5>

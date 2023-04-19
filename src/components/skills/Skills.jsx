@@ -1,10 +1,13 @@
 import React from 'react'
 import './skills.css';
 import { BsPatchCheckFill } from 'react-icons/bs'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Skills = () => {
+  AOS.init();
   return (
-    <section id='skills'>
+    <section id='skills' data-aos='fade-right' data-aos-duration="1000">
       <h3>My Skills</h3>
 
       <div className="container experience__container">
@@ -50,7 +53,7 @@ const Skills = () => {
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4>React Native </h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Beginner</small>
               </div>
             </article>
           </div>
@@ -76,7 +79,7 @@ const Skills = () => {
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4> Django</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
@@ -97,7 +100,7 @@ const Skills = () => {
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4>Firebase </h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>

@@ -1,13 +1,16 @@
-import React from 'react'
-import { BiCheck } from 'react-icons/bi'
-import './experience.css';
+import React from "react";
+import { BiCheck } from "react-icons/bi";
+import "./experience.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Experience = () => {
+  AOS.init();
   return (
-    <section id='experience'>
-       <h3> Experience</h3>
+    <section id="experience" data-aos="fade-left" data-aos-duration="1000">
+      <h3> Experience</h3>
 
-       <div className="container experiences__container">
+      <div className="container experiences__container">
         <article className="experience">
           <div className="experience__head">
             <h3>Central Adoption Resource Authority</h3>
@@ -17,24 +20,22 @@ const Experience = () => {
 
           <ul className="experience__list">
             <li>
-              <BiCheck className="experience__list-icon" />
+              <BiCheck
+                className="experience__list-icon"
+                style={{ fontSize: "4rem" }}
+              />
               <p>
-              Revamped the existing CARA portal, to 
-              improve the scalability and performance of the portal. Increased the efficiency
-by 30%.
+                Revamped the existing CARA portal, to improve the scalability
+                and performance of the portal. Increased the efficiency by 30%.
               </p>
             </li>
             <li>
               <BiCheck className="experience__list-icon" />
-              <p>
-              Collaborated with 10+ peoples to work on the project.
-              </p>
+              <p>Collaborated with 10+ peoples to work on the project.</p>
             </li>
             <li>
               <BiCheck className="experience__list-icon" />
-              <p>
-              Improved the UI by using the React.js tech stack.
-              </p>
+              <p>Improved the UI by using the React.js tech stack.</p>
             </li>
           </ul>
         </article>
@@ -47,18 +48,18 @@ by 30%.
 
           <ul className="experience__list">
             <li>
-              <BiCheck className="experience__list-icon" />
+              <BiCheck
+                className="experience__list-icon"
+                style={{ fontSize: "4rem" }}
+              />
               <p>
-              Designed a payment gateway System, which ensures secure
-               and fast monetary transactions and reduced the
-transaction time by 20%.
+                Designed a payment gateway System, which ensures secure and fast
+                monetary transactions and reduced the transaction time by 20%.
               </p>
             </li>
             <li>
               <BiCheck className="experience__list-icon" />
-              <p>
-              Powered by Razor pay APIs services at the backend.
-              </p>
+              <p>Powered by Razor pay APIs services at the backend.</p>
             </li>
           </ul>
         </article>
@@ -71,23 +72,24 @@ transaction time by 20%.
 
           <ul className="experience__list">
             <li>
-              <BiCheck className="experience__list-icon" />
+              <BiCheck
+                className="experience__list-icon"
+                style={{ fontSize: "4rem" }}
+              />
               <p>
-              Developed a Video Calling Web Application. Learnt various new technologies such as WebRTC, Channeling etc.
+                Developed a Video Calling Web Application. Learnt various new
+                technologies such as WebRTC, Channeling etc.
               </p>
             </li>
             <li>
               <BiCheck className="experience__list-icon" />
-              <p>
-              Built it using HTML5, CSS3, Bootstrap, JavaScript.
-              </p>
+              <p>Built it using HTML5, CSS3, Bootstrap, JavaScript.</p>
             </li>
           </ul>
         </article>
-        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

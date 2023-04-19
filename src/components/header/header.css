@@ -13,11 +13,20 @@ header {
     font-size:4rem ;
     
   }
+  #itype{
+    font-size: 2rem;
+    color: var(--color-primary);
+    position: absolute;
+    /* left:35% */
+    left:50%;
+    transform: translate(-50%);
+    /* right: 50%; */
+  }
  
   
   /*  CTA */
   .cta {
-    margin-top: 4rem;
+    margin-top: 7rem;
     display: flex;
     gap: 4rem;
     justify-content: center;
@@ -65,11 +74,23 @@ header {
   /* media query for med devices */
   @media screen and (max-width: 1024px) {
     header {
-      height: 68vh;
+      height: 35vh;
     }
     .header__socials,
     .scroll__down {
       display: none;
     }
   }
-  
+  @media  screen and (max-width:600px) {
+    h3 > span {
+      font-size:10px;
+      text-align: center;
+      left: 2%;
+    }
+    #itype{
+      left:5%
+    }
+    .cta{
+      margin-top: 9rem;
+    }
+  }
